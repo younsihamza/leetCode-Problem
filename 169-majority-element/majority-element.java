@@ -6,7 +6,7 @@ class Solution {
         {
             if (major == nums[i])
                 majorSize++;
-            else if (major != nums[i]){
+            else {
                 majorSize--;
                 if (majorSize == 0){
                     major = nums[i];
