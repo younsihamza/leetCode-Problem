@@ -10,7 +10,6 @@ class Solution {
         for (; currentIndex < s.length(); currentIndex++) {
             hold = s.substring(leftIndex+1,currentIndex+1);
             checkSet =  new HashSet<String>(Arrays.asList(hold.split("")));
-            System.out.println("hold value : "+ hold + " hold size : " + hold.length() + " set size : " + checkSet.size());
             if(hold.length() == checkSet.size())
                 maxLen = Math.max(hold.length(),maxLen);
             while(hold.length() != checkSet.size() && currentIndex >  leftIndex) {
