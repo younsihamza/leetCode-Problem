@@ -5,14 +5,10 @@ class Solution {
         while(true) {
             if(numbers[i] + numbers[j] > target)
                 j--;
-            else if(numbers[i] + numbers[j] < target){
+            else if(numbers[i] + numbers[j] < target)
                 i++;
-            }
-            else{
-                System.out.println("hamza");
-
+            else
                 return new int[]{i+1,j+1};
-            }
         }
     }
 }
