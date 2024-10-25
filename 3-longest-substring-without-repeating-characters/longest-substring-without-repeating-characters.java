@@ -7,7 +7,8 @@ class Solution {
         int leftIndex = -1;
         int maxLen = 0;
         String hold = "";
-        for (; currentIndex < s.length(); currentIndex++) {
+        int len = s.length();
+        for (; currentIndex < len; currentIndex++) {
             hold = s.substring(leftIndex+1,currentIndex+1);
             checkSet =  new HashSet<String>(Arrays.asList(hold.split("")));
             if(hold.length() == checkSet.size())
