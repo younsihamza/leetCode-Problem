@@ -12,10 +12,10 @@ class Solution {
     }
     private int operation(String op, int n2,int n1) {
         return switch (op) {
-            case "/" -> n1/n2;
+            case "/" -> n1 / n2;
             case "-" -> n1 - n2;
             case "+" -> n1 + n2;
-            case "*" -> n1 *n2;
+            case "*" -> n1 * n2;
             default -> 0;
         };
     }
