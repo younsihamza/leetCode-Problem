@@ -8,11 +8,7 @@ class Solution {
         return (nums[mid]<target ? binarySearch(nums, target, mid+1, end): binarySearch(nums, target, start, mid));
     }
     public int[] searchRange(int[] nums, int target) {
-        int first = -1;
-        int second = -1;
         int r = binarySearch(nums,target, 0, nums.length);
-        first = r;
-        second = r;
         int[] a = {r,r};
         if(r == -1)
             return a;
